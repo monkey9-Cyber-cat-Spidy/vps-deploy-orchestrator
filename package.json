@@ -1,0 +1,19 @@
+{
+  "name": "vps-deploy-orchestrator",
+  "version": "2.1.0",
+  "description": "Automated VPS Deployment Toolkit for Modern Web Apps",
+  "main": "bin/deploy.js",
+  "bin": {
+    "vps-deploy": "./bin/deploy.js"
+  },
+  "scripts": {
+    "start": "node bin/deploy.js",
+    "test": "node scripts/verify_configs.js"
+  },
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "commander": "^9.4.1",
+    "dotenv": "^16.4.5",
+    "ssh2-promise": "^1.0.3"
+  }
+}
