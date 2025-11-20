@@ -1,19 +1,19 @@
 {
   "name": "vps-deploy-orchestrator",
   "version": "2.1.0",
-  "description": "Automated VPS Deployment Toolkit for Modern Web Apps",
+  "description": "Production VPS deployment automation toolkit for Next.js and Node.js applications with Nginx reverse proxy, automated Let's Encrypt SSL, Docker Compose, and PM2 cluster management.",
   "main": "bin/deploy.js",
   "bin": {
     "vps-deploy": "./bin/deploy.js"
   },
   "scripts": {
-    "start": "node bin/deploy.js",
-    "test": "node scripts/verify_configs.js"
+    "start": "node bin/deploy.js --help",
+    "test": "node tests/cli.test.js"
   },
   "dependencies": {
     "chalk": "^4.1.2",
     "commander": "^9.4.1",
     "dotenv": "^16.4.5",
-    "ssh2-promise": "^1.0.3"
+    "ssh2": "^1.15.0"
   }
 }
